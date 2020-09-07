@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Nguyễn Nhĩ Thái
+    </title>
+</head>
+
+<body>
+    <h1>LIGHT BULB APP</h1>
+    <p>Click the button to use the light bulb</p>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic == "lightoff.png"
+            } else {
+                pic == "lighton.png"
+            }
+            document.getElementById('imglb').src = pic;
+        }
+    </script>
+    <img id="imglb" src="lighton.png" width="100" height="180">
+    <p>
+        <button type="button" onclick="light(1)"> Turn on</button>
+        <button type="button" onclick="light(0)">Turn off</button>
+    </p>
+
+</body>
+
+</html>
